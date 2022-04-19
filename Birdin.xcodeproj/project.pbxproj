@@ -9,21 +9,59 @@
 /* Begin PBXBuildFile section */
 		5BC7900C280D12E7001C1296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7900B280D12E7001C1296 /* AppDelegate.swift */; };
 		5BC7900E280D12E7001C1296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7900D280D12E7001C1296 /* SceneDelegate.swift */; };
-		5BC79010280D12E7001C1296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7900F280D12E7001C1296 /* ViewController.swift */; };
 		5BC79013280D12E7001C1296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC79011280D12E7001C1296 /* Main.storyboard */; };
 		5BC79015280D12E9001C1296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BC79014280D12E9001C1296 /* Assets.xcassets */; };
 		5BC79018280D12E9001C1296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BC79016280D12E9001C1296 /* LaunchScreen.storyboard */; };
+		5BC79020280D1443001C1296 /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7901F280D1443001C1296 /* HelloViewController.swift */; };
+		5BC79022280D145E001C1296 /* NewAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79021280D145E001C1296 /* NewAccountViewController.swift */; };
+		5BC79024280D146C001C1296 /* AvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79023280D146C001C1296 /* AvatarViewController.swift */; };
+		5BC79026280D1478001C1296 /* NewNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79025280D1478001C1296 /* NewNameViewController.swift */; };
+		5BC79028280D148A001C1296 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79027280D148A001C1296 /* LoginViewController.swift */; };
+		5BC7902A280D1493001C1296 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79029280D1493001C1296 /* HomeViewController.swift */; };
+		5BC7902C280D149E001C1296 /* ImageSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7902B280D149E001C1296 /* ImageSelectViewController.swift */; };
+		5BC7902E280D14AB001C1296 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7902D280D14AB001C1296 /* PostViewController.swift */; };
+		5BC79030280D14B7001C1296 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7902F280D14B7001C1296 /* SettingViewController.swift */; };
+		5BC79032280D14C8001C1296 /* IconSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79031280D14C8001C1296 /* IconSettingViewController.swift */; };
+		5BC79034280D1973001C1296 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79033280D1973001C1296 /* TabBarController.swift */; };
+		5BC79036280D1BE2001C1296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC79035280D1BE2001C1296 /* GoogleService-Info.plist */; };
+		5BC79038280D3AEE001C1296 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79037280D3AEE001C1296 /* Const.swift */; };
+		5BC7903A280D3B5A001C1296 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79039280D3B5A001C1296 /* PostData.swift */; };
+		5BC7903D280D3BB9001C1296 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7903B280D3BB9001C1296 /* PostTableViewCell.swift */; };
+		5BC7903E280D3BB9001C1296 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC7903C280D3BB9001C1296 /* PostTableViewCell.xib */; };
+		5BC79040280D578F001C1296 /* NewIconSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7903F280D578F001C1296 /* NewIconSettingViewController.swift */; };
+		5BC79042280D57A3001C1296 /* NewAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79041280D57A3001C1296 /* NewAvatarViewController.swift */; };
+		7F06C25ACC23C3423A865B0B /* Pods_Birdin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100AD0254AF3041A51716F6D /* Pods_Birdin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100AD0254AF3041A51716F6D /* Pods_Birdin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Birdin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC79008280D12E7001C1296 /* Birdin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birdin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC7900B280D12E7001C1296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BC7900D280D12E7001C1296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5BC7900F280D12E7001C1296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5BC79012280D12E7001C1296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BC79014280D12E9001C1296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BC79017280D12E9001C1296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5BC79019280D12E9001C1296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC7901F280D1443001C1296 /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
+		5BC79021280D145E001C1296 /* NewAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccountViewController.swift; sourceTree = "<group>"; };
+		5BC79023280D146C001C1296 /* AvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarViewController.swift; sourceTree = "<group>"; };
+		5BC79025280D1478001C1296 /* NewNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNameViewController.swift; sourceTree = "<group>"; };
+		5BC79027280D148A001C1296 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5BC79029280D1493001C1296 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5BC7902B280D149E001C1296 /* ImageSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectViewController.swift; sourceTree = "<group>"; };
+		5BC7902D280D14AB001C1296 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		5BC7902F280D14B7001C1296 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		5BC79031280D14C8001C1296 /* IconSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSettingViewController.swift; sourceTree = "<group>"; };
+		5BC79033280D1973001C1296 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		5BC79035280D1BE2001C1296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BC79037280D3AEE001C1296 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		5BC79039280D3B5A001C1296 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		5BC7903B280D3BB9001C1296 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		5BC7903C280D3BB9001C1296 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		5BC7903F280D578F001C1296 /* NewIconSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIconSettingViewController.swift; sourceTree = "<group>"; };
+		5BC79041280D57A3001C1296 /* NewAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAvatarViewController.swift; sourceTree = "<group>"; };
+		A3D9E4BF4B9FE3CCEFD2B3E1 /* Pods-Birdin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birdin.release.xcconfig"; path = "Target Support Files/Pods-Birdin/Pods-Birdin.release.xcconfig"; sourceTree = "<group>"; };
+		FC104B028715F2D5802E0140 /* Pods-Birdin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birdin.debug.xcconfig"; path = "Target Support Files/Pods-Birdin/Pods-Birdin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F06C25ACC23C3423A865B0B /* Pods_Birdin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,7 +80,10 @@
 			isa = PBXGroup;
 			children = (
 				5BC7900A280D12E7001C1296 /* Birdin */,
+				5BC79035280D1BE2001C1296 /* GoogleService-Info.plist */,
 				5BC79009280D12E7001C1296 /* Products */,
+				9F175415629896AEB55D4285 /* Pods */,
+				6006A4A05474009B60F6FA0E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +100,46 @@
 			children = (
 				5BC7900B280D12E7001C1296 /* AppDelegate.swift */,
 				5BC7900D280D12E7001C1296 /* SceneDelegate.swift */,
-				5BC7900F280D12E7001C1296 /* ViewController.swift */,
+				5BC7901F280D1443001C1296 /* HelloViewController.swift */,
+				5BC79021280D145E001C1296 /* NewAccountViewController.swift */,
+				5BC7903F280D578F001C1296 /* NewIconSettingViewController.swift */,
+				5BC79041280D57A3001C1296 /* NewAvatarViewController.swift */,
+				5BC79023280D146C001C1296 /* AvatarViewController.swift */,
+				5BC79025280D1478001C1296 /* NewNameViewController.swift */,
+				5BC79027280D148A001C1296 /* LoginViewController.swift */,
+				5BC79029280D1493001C1296 /* HomeViewController.swift */,
+				5BC7902B280D149E001C1296 /* ImageSelectViewController.swift */,
+				5BC7902D280D14AB001C1296 /* PostViewController.swift */,
+				5BC7902F280D14B7001C1296 /* SettingViewController.swift */,
+				5BC79031280D14C8001C1296 /* IconSettingViewController.swift */,
+				5BC79033280D1973001C1296 /* TabBarController.swift */,
+				5BC79037280D3AEE001C1296 /* Const.swift */,
+				5BC79039280D3B5A001C1296 /* PostData.swift */,
+				5BC7903B280D3BB9001C1296 /* PostTableViewCell.swift */,
+				5BC7903C280D3BB9001C1296 /* PostTableViewCell.xib */,
 				5BC79011280D12E7001C1296 /* Main.storyboard */,
 				5BC79014280D12E9001C1296 /* Assets.xcassets */,
 				5BC79016280D12E9001C1296 /* LaunchScreen.storyboard */,
 				5BC79019280D12E9001C1296 /* Info.plist */,
 			);
 			path = Birdin;
+			sourceTree = "<group>";
+		};
+		6006A4A05474009B60F6FA0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				100AD0254AF3041A51716F6D /* Pods_Birdin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F175415629896AEB55D4285 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC104B028715F2D5802E0140 /* Pods-Birdin.debug.xcconfig */,
+				A3D9E4BF4B9FE3CCEFD2B3E1 /* Pods-Birdin.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BC7901C280D12E9001C1296 /* Build configuration list for PBXNativeTarget "Birdin" */;
 			buildPhases = (
+				A3D74AC8451E16CD0D92B5EE /* [CP] Check Pods Manifest.lock */,
 				5BC79004280D12E7001C1296 /* Sources */,
 				5BC79005280D12E7001C1296 /* Frameworks */,
 				5BC79006280D12E7001C1296 /* Resources */,
+				1C64469C1E38843F395555EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,21 +203,80 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BC79018280D12E9001C1296 /* LaunchScreen.storyboard in Resources */,
+				5BC7903E280D3BB9001C1296 /* PostTableViewCell.xib in Resources */,
 				5BC79015280D12E9001C1296 /* Assets.xcassets in Resources */,
 				5BC79013280D12E7001C1296 /* Main.storyboard in Resources */,
+				5BC79036280D1BE2001C1296 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C64469C1E38843F395555EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Birdin/Pods-Birdin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Birdin/Pods-Birdin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Birdin/Pods-Birdin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3D74AC8451E16CD0D92B5EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Birdin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5BC79004280D12E7001C1296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC79010280D12E7001C1296 /* ViewController.swift in Sources */,
 				5BC7900C280D12E7001C1296 /* AppDelegate.swift in Sources */,
+				5BC79034280D1973001C1296 /* TabBarController.swift in Sources */,
+				5BC79026280D1478001C1296 /* NewNameViewController.swift in Sources */,
 				5BC7900E280D12E7001C1296 /* SceneDelegate.swift in Sources */,
+				5BC79028280D148A001C1296 /* LoginViewController.swift in Sources */,
+				5BC7902A280D1493001C1296 /* HomeViewController.swift in Sources */,
+				5BC79022280D145E001C1296 /* NewAccountViewController.swift in Sources */,
+				5BC79020280D1443001C1296 /* HelloViewController.swift in Sources */,
+				5BC7902C280D149E001C1296 /* ImageSelectViewController.swift in Sources */,
+				5BC79024280D146C001C1296 /* AvatarViewController.swift in Sources */,
+				5BC79042280D57A3001C1296 /* NewAvatarViewController.swift in Sources */,
+				5BC7903A280D3B5A001C1296 /* PostData.swift in Sources */,
+				5BC7903D280D3BB9001C1296 /* PostTableViewCell.swift in Sources */,
+				5BC79032280D14C8001C1296 /* IconSettingViewController.swift in Sources */,
+				5BC7902E280D14AB001C1296 /* PostViewController.swift in Sources */,
+				5BC79040280D578F001C1296 /* NewIconSettingViewController.swift in Sources */,
+				5BC79030280D14B7001C1296 /* SettingViewController.swift in Sources */,
+				5BC79038280D3AEE001C1296 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +420,7 @@
 		};
 		5BC7901D280D12E9001C1296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC104B028715F2D5802E0140 /* Pods-Birdin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,11 +429,12 @@
 				DEVELOPMENT_TEAM = TKHKX7W4SU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Birdin/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,12 +444,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5BC7901E280D12E9001C1296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3D9E4BF4B9FE3CCEFD2B3E1 /* Pods-Birdin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,11 +459,12 @@
 				DEVELOPMENT_TEAM = TKHKX7W4SU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Birdin/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +474,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
