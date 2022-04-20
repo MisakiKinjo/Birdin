@@ -22,7 +22,6 @@ class NewNameViewController: UIViewController {
         super.viewDidLoad()
 
         iconImage.image = image
-        //image.clipShape(Circle())
         iconImage.layer.cornerRadius = iconImage.frame.size.width * 0.5
                 iconImage.clipsToBounds = true
     }

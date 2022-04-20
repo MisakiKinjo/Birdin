@@ -35,7 +35,7 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
             //撮影/選択された画像を取得する
             let image = info[.originalImage] as! UIImage
             //CLImageEditorライブラリで加工する
-            print("DEBUF_PRINT: image = \(image)")
+            print("DEBUG_PRINT: image = \(image)")
             //CLImageEditorにimageを渡して、加工画面を起動する
             let editor = CLImageEditor(image: image)!
             editor.delegate = self
@@ -66,7 +66,7 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
                     print("DEBUG_PRINT: " + error.localizedDescription)
                     return
                 }
-                print("DEBUG_PRINT: [displayName = \(user?.photoURL!)]の設定に成功しました。")
+                print("DEBUG_PRINT: 画像の変更に成功しました。")
                 
                 //HUDで完了を知らせる
                 SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")

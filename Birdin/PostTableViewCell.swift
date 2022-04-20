@@ -74,6 +74,7 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
             self.commentLabel.text = comments
         
         //アイコンの表示
+        iconImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
         let iconRef = Storage.storage().reference().child(Const.iconPath).child(postData.id + ".jpg")
         iconImageView.sd_setImage(with: iconRef)
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5

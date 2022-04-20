@@ -23,13 +23,13 @@
 		5BC79030280D14B7001C1296 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7902F280D14B7001C1296 /* SettingViewController.swift */; };
 		5BC79032280D14C8001C1296 /* IconSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79031280D14C8001C1296 /* IconSettingViewController.swift */; };
 		5BC79034280D1973001C1296 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79033280D1973001C1296 /* TabBarController.swift */; };
-		5BC79036280D1BE2001C1296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC79035280D1BE2001C1296 /* GoogleService-Info.plist */; };
 		5BC79038280D3AEE001C1296 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79037280D3AEE001C1296 /* Const.swift */; };
 		5BC7903A280D3B5A001C1296 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79039280D3B5A001C1296 /* PostData.swift */; };
 		5BC7903D280D3BB9001C1296 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7903B280D3BB9001C1296 /* PostTableViewCell.swift */; };
 		5BC7903E280D3BB9001C1296 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BC7903C280D3BB9001C1296 /* PostTableViewCell.xib */; };
 		5BC79040280D578F001C1296 /* NewIconSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7903F280D578F001C1296 /* NewIconSettingViewController.swift */; };
 		5BC79042280D57A3001C1296 /* NewAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79041280D57A3001C1296 /* NewAvatarViewController.swift */; };
+		5BC79048281035B3001C1296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC79047281035B3001C1296 /* GoogleService-Info.plist */; };
 		7F06C25ACC23C3423A865B0B /* Pods_Birdin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100AD0254AF3041A51716F6D /* Pods_Birdin.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,13 +53,13 @@
 		5BC7902F280D14B7001C1296 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		5BC79031280D14C8001C1296 /* IconSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconSettingViewController.swift; sourceTree = "<group>"; };
 		5BC79033280D1973001C1296 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		5BC79035280D1BE2001C1296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5BC79037280D3AEE001C1296 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		5BC79039280D3B5A001C1296 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		5BC7903B280D3BB9001C1296 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		5BC7903C280D3BB9001C1296 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		5BC7903F280D578F001C1296 /* NewIconSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIconSettingViewController.swift; sourceTree = "<group>"; };
 		5BC79041280D57A3001C1296 /* NewAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAvatarViewController.swift; sourceTree = "<group>"; };
+		5BC79047281035B3001C1296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3D9E4BF4B9FE3CCEFD2B3E1 /* Pods-Birdin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birdin.release.xcconfig"; path = "Target Support Files/Pods-Birdin/Pods-Birdin.release.xcconfig"; sourceTree = "<group>"; };
 		FC104B028715F2D5802E0140 /* Pods-Birdin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birdin.debug.xcconfig"; path = "Target Support Files/Pods-Birdin/Pods-Birdin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				5BC7900A280D12E7001C1296 /* Birdin */,
-				5BC79035280D1BE2001C1296 /* GoogleService-Info.plist */,
 				5BC79009280D12E7001C1296 /* Products */,
 				9F175415629896AEB55D4285 /* Pods */,
 				6006A4A05474009B60F6FA0E /* Frameworks */,
@@ -120,6 +119,7 @@
 				5BC79011280D12E7001C1296 /* Main.storyboard */,
 				5BC79014280D12E9001C1296 /* Assets.xcassets */,
 				5BC79016280D12E9001C1296 /* LaunchScreen.storyboard */,
+				5BC79047281035B3001C1296 /* GoogleService-Info.plist */,
 				5BC79019280D12E9001C1296 /* Info.plist */,
 			);
 			path = Birdin;
@@ -204,9 +204,9 @@
 			files = (
 				5BC79018280D12E9001C1296 /* LaunchScreen.storyboard in Resources */,
 				5BC7903E280D3BB9001C1296 /* PostTableViewCell.xib in Resources */,
+				5BC79048281035B3001C1296 /* GoogleService-Info.plist in Resources */,
 				5BC79015280D12E9001C1296 /* Assets.xcassets in Resources */,
 				5BC79013280D12E7001C1296 /* Main.storyboard in Resources */,
-				5BC79036280D1BE2001C1296 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

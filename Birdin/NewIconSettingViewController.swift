@@ -60,16 +60,16 @@ class NewIconSettingViewController: UIViewController, UIImagePickerControllerDel
         iconRef.putData(imageData!, metadata: metadata) { (metadata, error) in
             if error != nil {
                 SVProgressHUD.showError(withStatus: "画像のアップロードが失敗しました")
-            }
+            }*/
         //　遷移先の画面を開く
         let newNameViewController = self.storyboard?.instantiateViewController(withIdentifier: "NewName") as! NewNameViewController
         newNameViewController.image = image!
         editor.present(newNameViewController, animated: true, completion: nil)
-        }*/
+        //}
     }
+    
     //CLImageEditorの編集がキャンセルされた時
     func imageEditorDidCancel(_ editor: CLImageEditor!) {
-        //画面を閉じる
         editor.dismiss(animated: true, completion: nil)
     }
     

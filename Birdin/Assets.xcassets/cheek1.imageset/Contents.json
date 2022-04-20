@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "無題352_20220417012749.png",
+      "filename" : "cheek1.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "無題352_20220417012749-1.png",
+      "filename" : "cheek1@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "無題352_20220417012749-2.png",
+      "filename" : "cheek1@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
