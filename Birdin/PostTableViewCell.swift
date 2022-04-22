@@ -80,9 +80,9 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
         format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
         let sDate = format.string(from: date)
         iconImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray*/
-        let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
+        let postIconRef = Storage.storage().reference().child(Const.iconPath).child(postData.id + Auth.auth().currentUser!.uid + ".jpg")
         //iconImageView.image = postData.iconImage
-        iconImageView.sd_setImage(with: iconRef)
+        iconImageView.sd_setImage(with: postIconRef)
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
                 iconImageView.clipsToBounds = true
         

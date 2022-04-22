@@ -91,7 +91,7 @@ class NewAvatarViewController: UIViewController {
     @IBAction func handleFinishButton(_ sender: Any) {
         
         let iconImage = imageCreate(bodyImage: iconImageView.image!, eyeImage: eyeImageView.image!, beakImage: beakImageView.image!, cheekImage: cheekImageView.image!, headImage: headImageView.image!)
-        let storageref = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
+        /*let storageref = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
         let data = iconImage.jpegData(compressionQuality: 1.0)! as NSData
         storageref.putData(data as Data, metadata: nil) { (data, error) in
                     if error != nil {
@@ -99,12 +99,12 @@ class NewAvatarViewController: UIViewController {
                         return
                     }
             //self.iconRef = storageref
-                }
-        //let postData = self.storyboard?.instantiatet(withIdentifier: "PostTableViewCell") as! PostTableViewCell
-        //postTableViewCell.iconImageView.image = iconImage
+                }*/
+        let newNameViewController = self.storyboard?.instantiateViewController(withIdentifier: "NewName") as! NewNameViewController
+        newNameViewController.image = iconImage
         
-        SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
-        self.dismiss(animated: true, completion: nil)
+        //SVProgressHUD.showSuccess(withStatus: "アイコン画像を登録しました")
+        //self.dismiss(animated: true, completion: nil)
     }
     
     
@@ -137,7 +137,7 @@ extension NewAvatarViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let collectionCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell2", for: indexPath)
-        let imageView = collectionCell.contentView.viewWithTag(1) as! UIImageView
+        let imageView = collectionCell.contentView.viewWithTag(2) as! UIImageView
         let cellImage = UIImage(named: photos[indexPath.row])
         imageView.image = cellImage
         return collectionCell
@@ -147,7 +147,7 @@ extension NewAvatarViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         // 横方向のスペース調整
-        let horizontalSpace:CGFloat = 3
+        let horizontalSpace:CGFloat = 1
 
         //セルのサイズを指定。画面上にセルを3つ表示させたいのであれば、デバイスの横幅を3分割した横幅　- セル間のスペース*2（セル間のスペースが二つあるため）
         let cellSize:CGFloat = view.bounds.width/3 - horizontalSpace*2

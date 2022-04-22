@@ -63,6 +63,8 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
                     SVProgressHUD.showError(withStatus: "画像のアップロードが失敗しました")
                 }
                 self.iconImage = image
+                let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
+                postViewController.iconImage = image
             SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
         }
         editor.dismiss(animated: true, completion: nil)

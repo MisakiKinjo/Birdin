@@ -37,7 +37,7 @@ class NewAccountViewController: UIViewController {
                 if let error = error {
                     //エラーがあったら原因をprintしてreturn
                     print("DEBUG_PRINT: " + error.localizedDescription)
-                    SVProgressHUD.showError(withStatus: "ユーザー作成に失敗しました。")
+                    //SVProgressHUD.showError(withStatus: "ユーザー作成に失敗しました。")
                     return
                 }
                 print("DEBUG_PRINT: ユーザー作成に成功しました。")

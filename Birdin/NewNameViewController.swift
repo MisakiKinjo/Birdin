@@ -46,11 +46,12 @@ class NewNameViewController: UIViewController {
                     return
                 }
                 print("DEBUG_PRINT: [displayName = \(user.displayName!)]の設定に成功しました。")
-                
+                SVProgressHUD.showSuccess(withStatus: "登録しました")
                 // HUDを消す
                 SVProgressHUD.dismiss()
                 
                 //　画面を閉じてタブ画面に戻る
+                self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
                 //self.dismiss(animated: true, completion: nil)
             }
         }
@@ -75,9 +76,9 @@ class NewNameViewController: UIViewController {
                        //self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
                         return
                     }
-                    
-            
-                    // HUDで完了を表示する
+            let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
+            postViewController.iconImage = self.image
+                                // HUDで完了を表示する
                     SVProgressHUD.showSuccess(withStatus: "登録しました")
                     // 投稿処理が完了したので先頭画面に戻る
                   self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)

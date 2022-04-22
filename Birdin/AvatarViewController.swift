@@ -114,8 +114,9 @@ class AvatarViewController: UIViewController {
                     }
             self.iconRef = storageref
                 }
-        //let postData = self.storyboard?.instantiatet(withIdentifier: "PostTableViewCell") as! PostTableViewCell
-        //postTableViewCell.iconImageView.image = iconImage
+        
+        let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
+        postViewController.iconImage = iconImage
         
         SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
         self.dismiss(animated: true, completion: nil)

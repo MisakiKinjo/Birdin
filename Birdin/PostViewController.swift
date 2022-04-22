@@ -13,6 +13,7 @@ import SVProgressHUD
 class PostViewController: UIViewController {
     
     var image: UIImage!
+    var iconImage: UIImage!
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
@@ -30,6 +31,14 @@ class PostViewController: UIViewController {
         //画像と投稿データの保存場所を定義する
         let postRef = Firestore.firestore().collection(Const.PostPath).document()
         let imageRef = Storage.storage().reference().child(Const.ImagePath).child(postRef.documentID + ".jpg")
+        let postIconRef = Storage.storage().reference().child(Const.iconPath).child(postRef.documentID + Auth.auth().currentUser!.uid + ".jpg")
+        let data = iconImage!.jpegData(compressionQuality: 1.0)! as NSData
+        postIconRef.putData(data as Data, metadata: nil) { (data, error) in
+                    if error != nil {
+                        return
+                    }
+            
+                }
         // HUDで投稿処理中の表示を開始
                 SVProgressHUD.show()
         // Storageに画像をアップロードする
