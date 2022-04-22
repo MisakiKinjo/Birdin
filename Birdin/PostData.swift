@@ -18,6 +18,7 @@ class PostData: NSObject {
     var isLiked: Bool = false
     var comments: [String] = []
     //var iconRef : StorageReference?
+    var iconImage: UIImage?
 
     init(document: QueryDocumentSnapshot) {
         self.id = document.documentID

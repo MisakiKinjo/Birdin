@@ -402,7 +402,7 @@
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vB9-SO-cge">
                                                 <rect key="frame" x="0.0" y="30" width="337" height="449"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dyQ-Zb-nRi">
                                                     <size key="itemSize" width="292" height="342"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -423,6 +423,7 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </collectionViewCellContentView>
+                                                        <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <size key="customSize" width="292" height="342"/>
                                                     </collectionViewCell>
                                                 </cells>
@@ -432,12 +433,13 @@
                                                 </connections>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="500" id="Kw2-cm-Yyd"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="gH5-pD-2Ne" firstAttribute="top" secondItem="MQx-uw-Vbs" secondAttribute="top" id="6ob-QH-ieR"/>
                                     <constraint firstAttribute="trailing" secondItem="gH5-pD-2Ne" secondAttribute="trailing" id="Egb-5z-kjF"/>
@@ -482,7 +484,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W1Q-6N-qBO"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="NLx-9J-NLr" firstAttribute="top" secondItem="Qw6-y9-qhY" secondAttribute="bottom" constant="20" id="0pf-ng-9Zc"/>
                             <constraint firstItem="5S3-dS-qdN" firstAttribute="top" secondItem="Qw6-y9-qhY" secondAttribute="bottom" constant="20" id="1m3-rn-UbP"/>
@@ -1002,6 +1004,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="完成"/>
                                 <connections>
+                                    <action selector="handleFinishButton:" destination="WZ0-dt-Gwf" eventType="touchUpInside" id="7Zk-yu-p0g"/>
                                     <segue destination="cwM-or-9Pg" kind="show" id="Xcd-Tf-Cfc"/>
                                 </connections>
                             </button>

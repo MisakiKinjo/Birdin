@@ -12,7 +12,7 @@ import SVProgressHUD
 
 class IconSettingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate {
     
-    var localImageURL: NSURL?
+    var iconImage: UIImage?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,44 +41,37 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
             editor.delegate = self
             self.present(editor, animated: true, completion: nil)
             
-            self.localImageURL = info[UIImagePickerController.InfoKey.imageURL] as? NSURL
+            
         }
     }
     
     func imageEditor(_ editor: CLImageEditor!, didFinishEditingWith image: UIImage!) {
         
-        let user = Auth.auth().currentUser
-        if user == user {
-            /*let document: QueryDocumentSnapshot
-            let iconRef = Storage.storage().reference().child(Const.iconPath).child(document.documentID + ".jpg")
+        
+        let date:Date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
+        let sDate = format.string(from: date)
+            let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + "\(sDate)" + ".jpg")
             let imageData = image.jpegData(compressionQuality: 0.75)
             let metadata = StorageMetadata()
             metadata.contentType = "image/jpeg"
             iconRef.putData(imageData!, metadata: metadata) { (metadata, error) in
                 if error != nil {
                     SVProgressHUD.showError(withStatus: "画像のアップロードが失敗しました")
-                }*/
-            let changeRequest = user!.createProfileChangeRequest()
-            changeRequest.photoURL = localImageURL as URL?
-            changeRequest.commitChanges { error in
-                if let error = error {
-                    SVProgressHUD.showError(withStatus: "アイコン画像の変更に失敗しました。")
-                    print("DEBUG_PRINT: " + error.localizedDescription)
-                    return
                 }
-                print("DEBUG_PRINT: 画像の変更に成功しました。")
-                
-                //HUDで完了を知らせる
-                SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
-            }
+                self.iconImage = image
+            SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
         }
-        //　遷移先の画面を開く
-        //let settingViewController = self.storyboard?.instantiateViewController(withIdentifier: "Setting") as! SettingViewController
-        //settingViewController.image = image!
-        //SVProgressHUD.showSuccess(withStatus: "変更しました")
-        //editor.present(settingViewController, animated: true, completion: nil)
         editor.dismiss(animated: true, completion: nil)
     }
+    
+    func setIconImage(_ postData: PostData) {
+        postData.iconImage = self.iconImage
+        print("DEBUG_PRINT: iconImageをpostDataに渡しました")
+        return
+    }
+    
     //CLImageEditorの編集がキャンセルされた時
     func imageEditorDidCancel(_ editor: CLImageEditor!) {
         //画面を閉じる

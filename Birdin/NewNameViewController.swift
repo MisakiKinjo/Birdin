@@ -55,8 +55,11 @@ class NewNameViewController: UIViewController {
         }
         
         let imageData = image.jpegData(compressionQuality: 0.75)
-        
-        let iconRef = Storage.storage().reference().child(Const.iconPath).child(Firestore.firestore().collection(Const.PostPath).document().documentID + ".jpg")
+        let date:Date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
+        let sDate = format.string(from: date)
+        let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + "\(sDate)" + ".jpg")
         
         
         let metadata = StorageMetadata()

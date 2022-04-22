@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 import FirebaseStorageUI
 import FirebaseStorage
 
@@ -74,9 +75,14 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
             self.commentLabel.text = comments
         
         //アイコンの表示
-        iconImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
-        let iconRef = Storage.storage().reference().child(Const.iconPath).child(postData.id + ".jpg")
-        iconImageView.sd_setImage(with: iconRef)
+        /*let date:Date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
+        let sDate = format.string(from: date)
+        iconImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray*/
+        //let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + "\(sDate)" + ".jpg")
+        iconImageView.image = postData.iconImage
+        //iconImageView.sd_setImage(with: postData.iconRef!)
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
                 iconImageView.clipsToBounds = true
         
