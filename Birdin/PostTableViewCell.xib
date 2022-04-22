@@ -5,6 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -30,16 +31,17 @@
                             <constraint firstAttribute="width" secondItem="cnE-5U-0Ic" secondAttribute="height" multiplier="1:1" id="fFm-LJ-Dto"/>
                         </constraints>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PH-ve-yyc">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6PH-ve-yyc">
                         <rect key="frame" x="26" y="338" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="byR-cZ-uNw"/>
                             <constraint firstAttribute="height" constant="40" id="kC5-WV-x0g"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain">
+                        <color key="tintColor" systemColor="systemBrownColor"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal">
                             <imageReference key="image" image="heart" catalog="system" symbolScale="large"/>
-                        </buttonConfiguration>
+                        </state>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kx5-yO-YLY">
                         <rect key="frame" x="76" y="338" width="40" height="40"/>
@@ -57,6 +59,7 @@
                             <constraint firstAttribute="width" constant="40" id="MeZ-Qv-uJz"/>
                             <constraint firstAttribute="height" constant="40" id="w96-A2-kNB"/>
                         </constraints>
+                        <color key="tintColor" systemColor="systemBrownColor"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" image="message" catalog="system"/>
                     </button>
@@ -136,5 +139,8 @@
     <resources>
         <image name="heart" catalog="system" width="128" height="109"/>
         <image name="message" catalog="system" width="128" height="113"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

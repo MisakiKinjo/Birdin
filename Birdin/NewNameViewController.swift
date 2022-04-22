@@ -20,6 +20,7 @@ class NewNameViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         iconImage.image = image
         iconImage.layer.cornerRadius = iconImage.frame.size.width * 0.5
@@ -55,11 +56,11 @@ class NewNameViewController: UIViewController {
         }
         
         let imageData = image.jpegData(compressionQuality: 0.75)
-        let date:Date = Date()
+        /*let date:Date = Date()
         let format = DateFormatter()
         format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
-        let sDate = format.string(from: date)
-        let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + "\(sDate)" + ".jpg")
+        let sDate = format.string(from: date)*/
+        let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
         
         
         let metadata = StorageMetadata()

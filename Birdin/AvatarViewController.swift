@@ -100,12 +100,13 @@ class AvatarViewController: UIViewController {
         //avatarImageをアイコンに上書き
         iconImage = imageCreate(bodyImage: iconImageView.image!, eyeImage: eyeImageView.image!, beakImage: beakImageView.image!, cheekImage: cheekImageView.image!, headImage: headImageView.image!)
         //self.localImageURL = iconImage.InfoKey.imageURL as? NSURL
-        let date:Date = Date()
+        /*let date:Date = Date()
         let format = DateFormatter()
         format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
-        let sDate = format.string(from: date)
-        let storageref = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + "\(sDate)" + ".jpg")
+        let sDate = format.string(from: date)*/
+        let storageref = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
         let data = iconImage!.jpegData(compressionQuality: 1.0)! as NSData
+        storageref.delete()
         storageref.putData(data as Data, metadata: nil) { (data, error) in
                     if error != nil {
 
@@ -120,11 +121,11 @@ class AvatarViewController: UIViewController {
         self.dismiss(animated: true, completion: nil)
     }
     
-    func setIconRef(_ postData: PostData) {
+    /*func setIconImage(_ postData: PostData) {
         postData.iconImage = self.iconImage
         print("DEBUG_PRINT: iconImageをpostDataに渡しました")
         return
-    }
+    }*/
 
 
     @IBAction func avarar(_ sefue: UIStoryboardSegue) {

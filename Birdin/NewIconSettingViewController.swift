@@ -16,15 +16,10 @@ class NewIconSettingViewController: UIViewController, UIImagePickerControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
-    /*init(document: QueryDocumentSnapshot) {
-        self.id = document.documentID
-    }*/
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     @IBAction func useLibraryButton(_ sender: Any) {
         if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {

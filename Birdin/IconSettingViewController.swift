@@ -16,6 +16,7 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     @IBAction func useLibraryButton(_ sender: Any) {
@@ -48,14 +49,15 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
     func imageEditor(_ editor: CLImageEditor!, didFinishEditingWith image: UIImage!) {
         
         
-        let date:Date = Date()
+        /*let date:Date = Date()
         let format = DateFormatter()
         format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
-        let sDate = format.string(from: date)
-            let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + "\(sDate)" + ".jpg")
+        let sDate = format.string(from: date)*/
+            let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
             let imageData = image.jpegData(compressionQuality: 0.75)
             let metadata = StorageMetadata()
             metadata.contentType = "image/jpeg"
+        iconRef.delete()
             iconRef.putData(imageData!, metadata: metadata) { (metadata, error) in
                 if error != nil {
                     SVProgressHUD.showError(withStatus: "画像のアップロードが失敗しました")
@@ -66,11 +68,11 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
         editor.dismiss(animated: true, completion: nil)
     }
     
-    func setIconImage(_ postData: PostData) {
+    /*func setIconImage(_ postData: PostData) {
         postData.iconImage = self.iconImage
         print("DEBUG_PRINT: iconImageをpostDataに渡しました")
         return
-    }
+    }*/
     
     //CLImageEditorの編集がキャンセルされた時
     func imageEditorDidCancel(_ editor: CLImageEditor!) {

@@ -26,18 +26,19 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの名前は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UJf-zF-iZl">
-                                <rect key="frame" x="57" y="138" width="300" height="21"/>
+                                <rect key="frame" x="57" y="138" width="300" height="21.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="x72-sQ-FJp"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0We-KH-GLf">
-                                <rect key="frame" x="107" y="209" width="200" height="200"/>
+                                <rect key="frame" x="107" y="209.5" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="0We-KH-GLf" secondAttribute="height" multiplier="1:1" id="3DJ-jg-3zw"/>
                                     <constraint firstAttribute="height" constant="200" id="8pE-7I-Tan"/>
@@ -45,7 +46,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="表示名を入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJ9-x1-8Ix">
-                                <rect key="frame" x="57" y="439" width="300" height="34"/>
+                                <rect key="frame" x="57" y="439.5" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="gHh-aO-yVZ"/>
                                 </constraints>
@@ -53,12 +54,15 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7L-Nj-vlQ">
-                                <rect key="frame" x="57" y="503" width="300" height="31"/>
+                                <rect key="frame" x="57" y="503.5" width="300" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="fOd-Sl-L2w"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="登録"/>
+                                <buttonConfiguration key="configuration" style="filled" title="登録">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleSignUpButton:" destination="cwM-or-9Pg" eventType="touchUpInside" id="a9W-HC-Y68"/>
                                 </connections>
@@ -110,22 +114,30 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXl-S2-AhJ">
                                 <rect key="frame" x="57" y="215" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ugT-FD-1QN"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="新規登録"/>
+                                <buttonConfiguration key="configuration" style="filled" title="新規登録">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="BwG-KT-pCw" kind="show" id="KfY-xt-nLJ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PjL-Xb-yAY">
                                 <rect key="frame" x="57" y="296" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="RKn-8i-uNx"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ログイン"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ログイン">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="Q4x-eN-Ku5" kind="show" id="IN8-Hn-EXa"/>
                                 </connections>
@@ -157,33 +169,45 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ8-e0-Ecp">
                                 <rect key="frame" x="57" y="144" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="6Lp-qI-vOe"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ライブラリ"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ライブラリ">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleLibraryButton:" destination="tPx-r7-ccE" eventType="touchUpInside" id="PZu-1e-rfB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ixn-tc-SqX">
                                 <rect key="frame" x="57" y="225" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="rAn-Gk-9Q6"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="カメラ"/>
+                                <buttonConfiguration key="configuration" style="filled" title="カメラ">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleCameraButton:" destination="tPx-r7-ccE" eventType="touchUpInside" id="rCB-Wz-ei4"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-wG-L6O">
                                 <rect key="frame" x="57" y="306" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="TFy-n7-a9I"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="キャンセル"/>
+                                <buttonConfiguration key="configuration" style="filled" title="キャンセル">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleCancelButton:" destination="tPx-r7-ccE" eventType="touchUpInside" id="mzA-vq-QGc"/>
                                 </connections>
@@ -223,6 +247,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新規登録" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s7y-fJ-ZdO">
                                 <rect key="frame" x="57" y="188" width="300" height="21"/>
@@ -251,11 +276,15 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qNQ-zu-BNR">
                                 <rect key="frame" x="57" y="427" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Jm3-z0-5Et"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="次へ"/>
+                                <buttonConfiguration key="configuration" style="filled" title="次へ">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleNextButton:" destination="BwG-KT-pCw" eventType="touchUpInside" id="g52-3Z-DD1"/>
                                     <segue destination="GtX-sQ-DWY" kind="show" id="WOP-zG-wDI"/>
@@ -306,6 +335,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの見た目は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw6-y9-qhY">
                                 <rect key="frame" x="57" y="108" width="300" height="20.5"/>
@@ -327,56 +357,77 @@
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLY-SS-gmj">
                                 <rect key="frame" x="0.0" y="398.5" width="414" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6g-Hg-PAt">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z6g-Hg-PAt">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="83" id="9xP-5d-2C0"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="body"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="body">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleBodyButton:" destination="OnF-vj-zTI" eventType="touchUpInside" id="Lvn-W4-IQe"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVU-gL-iUS">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVU-gL-iUS">
                                         <rect key="frame" x="83" y="0.0" width="82.5" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="82.5" id="V3q-Cy-cG0"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="eye"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="eye">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleEyeButton:" destination="OnF-vj-zTI" eventType="touchUpInside" id="wMo-oW-04I"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbi-hs-a3j">
-                                        <rect key="frame" x="165.5" y="0.0" width="83" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbi-hs-a3j">
+                                        <rect key="frame" x="165.5" y="0.0" width="82.5" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="beak"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="beak">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleBeakButton:" destination="OnF-vj-zTI" eventType="touchUpInside" id="GPN-T6-P8E"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAG-Fa-eH3">
-                                        <rect key="frame" x="248.5" y="0.0" width="82.5" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sAG-Fa-eH3">
+                                        <rect key="frame" x="248" y="0.0" width="82.5" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="82.5" id="kYg-Ei-AKn"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="cheek"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="cheek">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleCheekButton:" destination="OnF-vj-zTI" eventType="touchUpInside" id="6Zg-6U-ro1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip9-KD-YJq">
-                                        <rect key="frame" x="331" y="0.0" width="83" height="31"/>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ip9-KD-YJq">
+                                        <rect key="frame" x="330.5" y="0.0" width="83.5" height="31"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="head"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="head">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleHeadButton:" destination="OnF-vj-zTI" eventType="touchUpInside" id="8fe-1c-88S"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="vbi-hs-a3j" firstAttribute="centerX" relation="lessThanOrEqual" secondItem="fLY-SS-gmj" secondAttribute="centerX" id="1W1-Ho-s2U"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="nKU-fH-iZn"/>
@@ -384,11 +435,15 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBx-g6-RGd">
                                 <rect key="frame" x="57" y="791" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="6yd-oN-4eP"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="完成"/>
+                                <buttonConfiguration key="configuration" style="filled" title="完成">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleFinishButton:" destination="OnF-vj-zTI" eventType="touchUpInside" id="HPH-2K-X5v"/>
                                 </connections>
@@ -546,6 +601,7 @@
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メールアドレスを入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOP-4X-Nui">
                                 <rect key="frame" x="57" y="188" width="300" height="34"/>
@@ -568,8 +624,11 @@
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Nhf-lA-O0h"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ログイン"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ログイン">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleLoginButton:" destination="Q4x-eN-Ku5" eventType="touchUpInside" id="E6D-Py-sWp"/>
                                 </connections>
@@ -624,22 +683,30 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zw-pO-FxE">
                                 <rect key="frame" x="57" y="224" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="DAa-9J-dtm"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="投稿"/>
+                                <buttonConfiguration key="configuration" style="filled" title="投稿">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handlePostButton:" destination="4ND-gR-zga" eventType="touchUpInside" id="lsE-nB-Tva"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-Ff-p6l">
                                 <rect key="frame" x="57" y="305" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Cdj-Be-aa0"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="キャンセル"/>
+                                <buttonConfiguration key="configuration" style="filled" title="キャンセル">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleCancelButton:" destination="4ND-gR-zga" eventType="touchUpInside" id="lBl-tS-xK9"/>
                                 </connections>
@@ -695,44 +762,60 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1pM-Gv-MCb">
                                 <rect key="frame" x="57" y="239" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="1kh-rq-aTy"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="変更"/>
+                                <buttonConfiguration key="configuration" style="filled" title="変更">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleCangeButton:" destination="mPA-iJ-6Ke" eventType="touchUpInside" id="Hbk-Df-5TN"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jo0-UM-vts">
                                 <rect key="frame" x="57" y="300" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="ZN7-Hl-l9V"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="アイコン"/>
+                                <buttonConfiguration key="configuration" style="filled" title="アイコン">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="8eN-R8-TOZ" kind="show" id="qEm-QS-EuY"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuq-IB-EMd">
                                 <rect key="frame" x="57" y="361" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="6Co-Ns-RFU"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="ログアウト"/>
+                                <buttonConfiguration key="configuration" style="filled" title="ログアウト">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleLogoutButton:" destination="mPA-iJ-6Ke" eventType="touchUpInside" id="TKy-rU-KRw"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2PO-dJ-qfi">
                                 <rect key="frame" x="57" y="422" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="UhH-nm-1VH"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="退会"/>
+                                <buttonConfiguration key="configuration" style="filled" title="退会">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleEraseDataButton:" destination="mPA-iJ-6Ke" eventType="touchUpInside" id="lDx-aC-nGR"/>
                                 </connections>
@@ -767,13 +850,13 @@
         <!--Icon Setting View Controller-->
         <scene sceneID="YCE-7k-F2c">
             <objects>
-                <viewController storyboardIdentifier="IconSetting" id="8eN-R8-TOZ" customClass="IconSettingViewController" customModule="Birdin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IconSetting" modalPresentationStyle="fullScreen" id="8eN-R8-TOZ" customClass="IconSettingViewController" customModule="Birdin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ACN-W9-H0t">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アイコン設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-om-BEF">
-                                <rect key="frame" x="57" y="188" width="300" height="21"/>
+                                <rect key="frame" x="57" y="232" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="R49-eY-zId"/>
                                 </constraints>
@@ -782,42 +865,54 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN4-YA-Rhn">
-                                <rect key="frame" x="57" y="259" width="300" height="31"/>
+                                <rect key="frame" x="57" y="303" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="9xW-60-f36"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="写真を使う"/>
+                                <buttonConfiguration key="configuration" style="filled" title="写真を使う">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="useLibraryButton:" destination="8eN-R8-TOZ" eventType="touchUpInside" id="LPn-uS-Qk6"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RX-ZA-RuA">
-                                <rect key="frame" x="57" y="340" width="300" height="31"/>
+                                <rect key="frame" x="57" y="384" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="HXz-MR-sRr"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="アバターを使う"/>
+                                <buttonConfiguration key="configuration" style="filled" title="アバターを使う">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="useAvatarButton:" destination="8eN-R8-TOZ" eventType="touchUpInside" id="TBC-NM-zuA"/>
                                     <segue destination="OnF-vj-zTI" kind="show" id="C8Q-eH-PWR"/>
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iG5-Im-8rs">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="cancel" id="pI4-AK-4g3">
                                         <connections>
-                                            <segue destination="ngl-qd-uFM" kind="unwind" unwindAction="newAccount:" id="tiP-vQ-5D0"/>
+                                            <segue destination="ngl-qd-uFM" kind="unwind" unwindAction="setting:" id="vmb-dd-T6Z"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Oz-Ob-sts"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="iG5-Im-8rs" firstAttribute="top" secondItem="1Oz-Ob-sts" secondAttribute="top" id="4fa-Vm-INh"/>
                             <constraint firstItem="vGG-om-BEF" firstAttribute="centerX" secondItem="ACN-W9-H0t" secondAttribute="centerX" id="Cu5-O5-19B"/>
                             <constraint firstItem="iG5-Im-8rs" firstAttribute="centerX" secondItem="vGG-om-BEF" secondAttribute="centerX" id="DFa-dG-lUn"/>
                             <constraint firstItem="qN4-YA-Rhn" firstAttribute="top" secondItem="vGG-om-BEF" secondAttribute="bottom" constant="50" id="DXV-UL-VhL"/>
@@ -826,7 +921,6 @@
                             <constraint firstItem="9RX-ZA-RuA" firstAttribute="centerX" secondItem="ACN-W9-H0t" secondAttribute="centerX" id="UuG-ZQ-Wue"/>
                             <constraint firstItem="iG5-Im-8rs" firstAttribute="leading" secondItem="ACN-W9-H0t" secondAttribute="leading" id="ZA3-rb-mui"/>
                             <constraint firstItem="9RX-ZA-RuA" firstAttribute="top" secondItem="qN4-YA-Rhn" secondAttribute="bottom" constant="50" id="eDD-dB-bBZ"/>
-                            <constraint firstItem="iG5-Im-8rs" firstAttribute="top" secondItem="ACN-W9-H0t" secondAttribute="top" id="nIi-Tg-Ngg"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="7BK-Rb-y5u"/>
@@ -839,19 +933,24 @@
         <!--New Icon Setting View Controller-->
         <scene sceneID="As0-3i-VB3">
             <objects>
-                <viewController storyboardIdentifier="NewIconSetting" id="GtX-sQ-DWY" customClass="NewIconSettingViewController" customModule="Birdin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewIconSetting" modalPresentationStyle="fullScreen" id="GtX-sQ-DWY" customClass="NewIconSettingViewController" customModule="Birdin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CEB-RC-Pnn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wk-fn-4w5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="cancel" id="DWP-y0-O20"/>
+                                    <barButtonItem systemItem="cancel" id="DWP-y0-O20">
+                                        <connections>
+                                            <segue destination="dF2-qz-kak" kind="unwind" unwindAction="newAccount:" id="UU9-7v-7MU"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アイコン設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6j-ye-8qr">
-                                <rect key="frame" x="57" y="144" width="300" height="21"/>
+                                <rect key="frame" x="57" y="188" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="8qY-qI-l6r"/>
                                 </constraints>
@@ -860,23 +959,31 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIO-0g-PVX">
-                                <rect key="frame" x="57" y="215" width="300" height="31"/>
+                                <rect key="frame" x="57" y="259" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="e0g-6b-yn3"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="写真を使う"/>
+                                <buttonConfiguration key="configuration" style="filled" title="写真を使う">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="useLibraryButton:" destination="GtX-sQ-DWY" eventType="touchUpInside" id="PPT-UL-dTm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXR-Gy-vHZ">
-                                <rect key="frame" x="57" y="296" width="300" height="31"/>
+                                <rect key="frame" x="57" y="340" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="U7A-2i-dCR"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="アバターを使う"/>
+                                <buttonConfiguration key="configuration" style="filled" title="アバターを使う">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="useAvatarButton:" destination="GtX-sQ-DWY" eventType="touchUpInside" id="cqj-gb-KtS"/>
                                     <segue destination="WZ0-dt-Gwf" kind="show" id="5m2-4x-WMp"/>
@@ -900,29 +1007,31 @@
                     <navigationItem key="navigationItem" id="y1U-F0-UX4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvT-x6-pUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="dF2-qz-kak" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1903" y="808"/>
         </scene>
         <!--New Avatar View Controller-->
         <scene sceneID="OU4-RW-Otd">
             <objects>
-                <viewController storyboardIdentifier="NewAvatar" id="WZ0-dt-Gwf" customClass="NewAvatarViewController" customModule="Birdin" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewAvatar" modalPresentationStyle="fullScreen" id="WZ0-dt-Gwf" customClass="NewAvatarViewController" customModule="Birdin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jdr-wK-dQc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-8u-5aa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <barButtonItem systemItem="cancel" id="BMX-o6-qpV">
                                         <connections>
-                                            <segue destination="eXc-xy-czO" kind="unwind" unwindAction="newIcon:" id="LRr-kx-KHQ"/>
+                                            <segue destination="eXc-xy-czO" kind="unwind" unwindAction="newIcon:" id="EB1-Cu-3yq"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="あなたの見た目は？" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wlo-yd-3YQ">
-                                <rect key="frame" x="57" y="64" width="300" height="20.5"/>
+                                <rect key="frame" x="57" y="108" width="300" height="20.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="dI9-QN-9yR"/>
                                 </constraints>
@@ -931,7 +1040,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jQD-ja-3q8">
-                                <rect key="frame" x="92" y="104.5" width="230" height="230"/>
+                                <rect key="frame" x="92" y="148.5" width="230" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="jQD-ja-3q8" secondAttribute="height" multiplier="1:1" id="SEf-Vo-GYO"/>
                                     <constraint firstAttribute="width" constant="230" id="fhU-7n-6UM"/>
@@ -939,77 +1048,102 @@
                                 </constraints>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N1L-OK-e3W">
-                                <rect key="frame" x="0.0" y="354.5" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="398.5" width="414" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3eZ-k8-PxR">
                                         <rect key="frame" x="0.0" y="0.0" width="83" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="body"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="body">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleBodyButton:" destination="WZ0-dt-Gwf" eventType="touchUpInside" id="vHc-SR-LFd"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iza-aP-Otc">
                                         <rect key="frame" x="83" y="0.0" width="82.5" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="82.5" id="VpI-x6-Sby"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="eye"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="eye">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleEyeButton:" destination="WZ0-dt-Gwf" eventType="touchUpInside" id="2jo-F6-kwc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRJ-Fe-tOF">
                                         <rect key="frame" x="165.5" y="0.0" width="83" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="83" id="YKT-Hu-9vF"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="beak"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="beak">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleBeakButton:" destination="WZ0-dt-Gwf" eventType="touchUpInside" id="nrJ-Ni-Rbs"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KfC-sd-Xu0">
                                         <rect key="frame" x="248.5" y="0.0" width="82.5" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="82.5" id="ZT9-7I-eig"/>
                                         </constraints>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="cheek"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="cheek">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleCheekButton:" destination="WZ0-dt-Gwf" eventType="touchUpInside" id="5fa-lL-kiY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wbj-wQ-3Tz">
                                         <rect key="frame" x="331" y="0.0" width="83" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" systemColor="systemBrownColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" title="head"/>
+                                        <buttonConfiguration key="configuration" style="tinted" title="head">
+                                            <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <action selector="handleHeadButton:" destination="WZ0-dt-Gwf" eventType="touchUpInside" id="Jjx-tn-aIP"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="cQz-bX-aEK"/>
                                     <constraint firstItem="CRJ-Fe-tOF" firstAttribute="centerX" secondItem="N1L-OK-e3W" secondAttribute="centerX" id="oe7-fk-iZi"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMa-e8-MLL">
-                                <rect key="frame" x="57" y="767" width="300" height="31"/>
+                                <rect key="frame" x="57" y="821" width="300" height="31"/>
+                                <color key="backgroundColor" systemColor="systemBrownColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="whm-JZ-teT"/>
                                 </constraints>
+                                <color key="tintColor" systemColor="systemBrownColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="完成"/>
+                                <buttonConfiguration key="configuration" style="filled" title="完成">
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="handleFinishButton:" destination="WZ0-dt-Gwf" eventType="touchUpInside" id="7Zk-yu-p0g"/>
                                     <segue destination="cwM-or-9Pg" kind="show" id="Xcd-Tf-Cfc"/>
                                 </connections>
                             </button>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GY5-SN-OGn">
-                                <rect key="frame" x="20" y="404.5" width="374" height="362.5"/>
+                                <rect key="frame" x="20" y="448.5" width="374" height="372.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZES-Y7-g2u">
                                         <rect key="frame" x="0.0" y="0.0" width="358" height="500"/>
@@ -1017,7 +1151,7 @@
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="5TV-sn-fF6">
                                                 <rect key="frame" x="8" y="8" width="342" height="411"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wGS-yO-gMb">
                                                     <size key="itemSize" width="342" height="346"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -1032,7 +1166,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="342" height="346"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pug-Lf-CqV">
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pug-Lf-CqV">
                                                                     <rect key="frame" x="8" y="-64" width="334" height="389"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 </imageView>
@@ -1047,12 +1181,13 @@
                                                 </connections>
                                             </collectionView>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="500" id="aGn-7J-g4c"/>
                                         </constraints>
                                     </view>
                                 </subviews>
+                                <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstItem="ZES-Y7-g2u" firstAttribute="top" secondItem="WD2-Aj-NnT" secondAttribute="top" id="BLy-z0-Vbm"/>
                                     <constraint firstItem="ZES-Y7-g2u" firstAttribute="width" secondItem="WNp-Ye-X0Y" secondAttribute="width" multiplier="0.957219" id="FTm-xq-fWN"/>
@@ -1064,28 +1199,28 @@
                                 <viewLayoutGuide key="frameLayoutGuide" id="WNp-Ye-X0Y"/>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zoo-uk-l3S">
-                                <rect key="frame" x="92" y="104.5" width="230" height="230"/>
+                                <rect key="frame" x="92" y="148.5" width="230" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="mY9-Ke-u7h"/>
                                     <constraint firstAttribute="height" constant="230" id="xYc-5p-anr"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5zz-nQ-X6e">
-                                <rect key="frame" x="92" y="104.5" width="230" height="230"/>
+                                <rect key="frame" x="92" y="148.5" width="230" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="PzZ-q8-Jwo"/>
                                     <constraint firstAttribute="height" constant="230" id="Xs5-ci-SHK"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Jti-KD-lcy">
-                                <rect key="frame" x="92" y="104.5" width="230" height="230"/>
+                                <rect key="frame" x="92" y="148.5" width="230" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="230" id="Sh7-o9-X8B"/>
                                     <constraint firstAttribute="height" constant="230" id="yAn-Sb-D2p"/>
                                 </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dGS-6P-bOu">
-                                <rect key="frame" x="92" y="104.5" width="230" height="230"/>
+                                <rect key="frame" x="92" y="148.5" width="230" height="230"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="230" id="RHd-EI-4e3"/>
                                     <constraint firstAttribute="width" constant="230" id="sPT-Td-2sn"/>
@@ -1093,7 +1228,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="if5-Qt-rFM"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Fac-8u-5aa" firstAttribute="top" secondItem="if5-Qt-rFM" secondAttribute="top" id="1aJ-aY-zMR"/>
                             <constraint firstItem="dGS-6P-bOu" firstAttribute="centerX" secondItem="Jdr-wK-dQc" secondAttribute="centerX" id="7Hg-zD-KlS"/>
@@ -1195,6 +1330,9 @@
         <image name="setting" width="25" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

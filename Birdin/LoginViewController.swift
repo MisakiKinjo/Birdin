@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
     
@@ -44,7 +45,8 @@ class LoginViewController: UIViewController {
                 SVProgressHUD.dismiss()
                 
                 // 画面を閉じる
-                self.dismiss(animated: true, completion: nil)
+                self.tabBarController?.selectedIndex = 0
+                self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
             }
         }
     }

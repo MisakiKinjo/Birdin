@@ -80,14 +80,21 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
         format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
         let sDate = format.string(from: date)
         iconImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray*/
-        //let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + "\(sDate)" + ".jpg")
-        iconImageView.image = postData.iconImage
-        //iconImageView.sd_setImage(with: postData.iconRef!)
+        let iconRef = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
+        //iconImageView.image = postData.iconImage
+        iconImageView.sd_setImage(with: iconRef)
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
                 iconImageView.clipsToBounds = true
         
         //ユーザーネームの表示
         self.nameLabel.text = postData.name
+        
+        //ボタンの色
+        let r = CGFloat.random(in: 0 ... 255) / 255.0
+        let g = CGFloat.random(in: 0 ... 255) / 255.0
+        let b = CGFloat.random(in: 0 ... 255) / 255.0
+        likeButton.tintColor = UIColor(red:r, green: g, blue: b, alpha: 1.0)
+        commentButton.tintColor = UIColor(red:r, green: g, blue: b, alpha: 1.0)
     }
     
 }

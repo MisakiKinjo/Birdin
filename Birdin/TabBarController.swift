@@ -14,10 +14,16 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         super.viewDidLoad()
 
         //タブアイコンの色
-        self.tabBar.tintColor = UIColor(red: 1.0, green: 0.44, blue: 0.11, alpha: 1)
+        let r1 = CGFloat.random(in: 0 ... 150) / 255.0
+        let g1 = CGFloat.random(in: 0 ... 150) / 255.0
+        let b1 = CGFloat.random(in: 0 ... 150) / 255.0
+        self.tabBar.tintColor = UIColor(red: r1, green: g1, blue: b1, alpha: 1)
         //タブバーの背景色
+        let r2 = CGFloat.random(in: 200 ... 255) / 255.0
+        let g2 = CGFloat.random(in: 200 ... 255) / 255.0
+        let b2 = CGFloat.random(in: 200 ... 255) / 255.0
         let appearance = UITabBarAppearance()
-        appearance.backgroundColor = UIColor(red: 0.96, green: 0.91, blue: 0.87, alpha: 1)
+        appearance.backgroundColor = UIColor(red: r2, green: g2, blue: b2, alpha: 1)
         self.tabBar.standardAppearance = appearance
         self.tabBar.scrollEdgeAppearance = appearance
         // UITabBarControllerDelegateプロトコルのメソッドを処理

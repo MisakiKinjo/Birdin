@@ -15,6 +15,7 @@ class SettingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -72,11 +73,10 @@ class SettingViewController: UIViewController {
     }
     
     @IBAction func handleEraseDataButton(_ sender: Any) {
-        //var alertTextField: UITextField?
 
                 let alert = UIAlertController(
-                    title: "データが全て削除されます",
-                    message: "データを削除してもよろしいですか？",
+                    title: "ユーザーデータが削除されます",
+                    message: "過去の投稿は消えません。",
                     preferredStyle: UIAlertController.Style.alert)
                 
                 alert.addAction(
