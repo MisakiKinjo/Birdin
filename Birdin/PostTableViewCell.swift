@@ -84,7 +84,7 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
         //iconImageView.image = postData.iconImage
         iconImageView.sd_setImage(with: postIconRef)
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
-                iconImageView.clipsToBounds = true
+        iconImageView.clipsToBounds = true
         
         //ユーザーネームの表示
         self.nameLabel.text = postData.name

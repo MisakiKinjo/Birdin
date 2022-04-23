@@ -147,7 +147,7 @@ extension NewAvatarViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
         // 横方向のスペース調整
-        let horizontalSpace:CGFloat = 1
+        let horizontalSpace:CGFloat = 10
 
         //セルのサイズを指定。画面上にセルを3つ表示させたいのであれば、デバイスの横幅を3分割した横幅　- セル間のスペース*2（セル間のスペースが二つあるため）
         let cellSize:CGFloat = view.bounds.width/3 - horizontalSpace*2

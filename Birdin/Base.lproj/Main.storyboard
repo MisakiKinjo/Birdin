@@ -452,34 +452,34 @@
                                 <rect key="frame" x="20" y="429.5" width="374" height="361.5"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gH5-pD-2Ne">
-                                        <rect key="frame" x="0.0" y="0.0" width="337" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="337" height="300"/>
                                         <subviews>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="vB9-SO-cge">
-                                                <rect key="frame" x="0.0" y="30" width="337" height="449"/>
+                                                <rect key="frame" x="0.0" y="30" width="329" height="262"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dyQ-Zb-nRi">
-                                                    <size key="itemSize" width="292" height="342"/>
+                                                    <size key="itemSize" width="329" height="189"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="IUy-a5-lJV">
-                                                        <rect key="frame" x="22.5" y="0.0" width="292" height="342"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="329" height="189"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="10v-MF-m0V">
-                                                            <rect key="frame" x="0.0" y="0.0" width="292" height="342"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="329" height="189"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="RuU-Je-aXe">
-                                                                    <rect key="frame" x="13" y="-2" width="265" height="316"/>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="RuU-Je-aXe">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="189"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </collectionViewCellContentView>
                                                         <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                        <size key="customSize" width="292" height="342"/>
+                                                        <size key="customSize" width="329" height="189"/>
                                                     </collectionViewCell>
                                                 </cells>
                                                 <connections>
@@ -490,7 +490,7 @@
                                         </subviews>
                                         <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="500" id="Kw2-cm-Yyd"/>
+                                            <constraint firstAttribute="height" constant="300" id="Kw2-cm-Yyd"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -711,15 +711,25 @@
                                     <action selector="handleCancelButton:" destination="4ND-gR-zga" eventType="touchUpInside" id="lBl-tS-xK9"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3Wa-h6-IXD">
+                                <rect key="frame" x="329" y="54" width="65" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="J5J-d3-Msa"/>
+                                    <constraint firstAttribute="width" constant="65" id="d4m-Sg-IKH"/>
+                                    <constraint firstAttribute="width" secondItem="3Wa-h6-IXD" secondAttribute="height" multiplier="1:1" id="dvw-uB-QTT"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZaR-VD-o3U"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="ZaR-VD-o3U" firstAttribute="trailing" secondItem="3Wa-h6-IXD" secondAttribute="trailing" constant="20" id="1PF-zv-Qws"/>
                             <constraint firstItem="ZaR-VD-o3U" firstAttribute="trailing" secondItem="p4C-mu-MyR" secondAttribute="trailing" constant="10" id="1k9-id-Fbg"/>
                             <constraint firstItem="p4C-mu-MyR" firstAttribute="bottom" secondItem="LhW-df-gHf" secondAttribute="bottom" id="APc-4i-ddS"/>
                             <constraint firstItem="p4C-mu-MyR" firstAttribute="leading" secondItem="LhW-df-gHf" secondAttribute="trailing" constant="10" id="KRT-z3-Uol"/>
                             <constraint firstItem="LhW-df-gHf" firstAttribute="leading" secondItem="ZaR-VD-o3U" secondAttribute="leading" constant="10" id="PmR-vg-FSQ"/>
                             <constraint firstItem="sfg-Ff-p6l" firstAttribute="centerX" secondItem="niB-ot-66n" secondAttribute="centerX" id="RCd-Eg-XZH"/>
+                            <constraint firstItem="3Wa-h6-IXD" firstAttribute="top" secondItem="LhW-df-gHf" secondAttribute="top" id="Vaa-l9-2nj"/>
                             <constraint firstItem="7Zw-pO-FxE" firstAttribute="top" secondItem="p4C-mu-MyR" secondAttribute="bottom" constant="50" id="XCr-C9-3gd"/>
                             <constraint firstItem="sfg-Ff-p6l" firstAttribute="top" secondItem="7Zw-pO-FxE" secondAttribute="bottom" constant="50" id="XFu-Yt-ho6"/>
                             <constraint firstItem="LhW-df-gHf" firstAttribute="top" secondItem="ZaR-VD-o3U" secondAttribute="top" constant="10" id="Yyj-Ts-hdV"/>
@@ -727,13 +737,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="iconImageView" destination="3Wa-h6-IXD" id="3Sk-g4-uQO"/>
                         <outlet property="imageView" destination="LhW-df-gHf" id="3WC-xs-TIL"/>
                         <outlet property="textField" destination="p4C-mu-MyR" id="HZ1-gy-JJe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mma-Oh-OZb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1007" y="808"/>
+            <point key="canvasLocation" x="-1007.2463768115942" y="807.58928571428567"/>
         </scene>
         <!--設定-->
         <scene sceneID="gXh-jh-YXb">
@@ -1153,7 +1164,7 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.96841138599999999" green="0.95360327749999996" blue="0.90420094929999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wGS-yO-gMb">
-                                                    <size key="itemSize" width="342" height="346"/>
+                                                    <size key="itemSize" width="0.0" height="0.0"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>

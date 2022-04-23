@@ -79,9 +79,11 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B3-hY-rd6">
-                        <rect key="frame" x="26" y="501" width="268" height="81"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9B3-hY-rd6">
+                        <rect key="frame" x="26" y="537" width="268" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="juq-T2-ssO"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -101,6 +103,7 @@
                     <constraint firstItem="kx5-yO-YLY" firstAttribute="leading" secondItem="6PH-ve-yyc" secondAttribute="trailing" constant="10" id="3T0-qV-1N8"/>
                     <constraint firstItem="bmR-Sz-ZF2" firstAttribute="top" secondItem="6xV-8R-d22" secondAttribute="bottom" constant="10" id="45O-8u-Nzz"/>
                     <constraint firstItem="cnE-5U-0Ic" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="4NC-R8-Npo"/>
+                    <constraint firstItem="9B3-hY-rd6" firstAttribute="leading" secondItem="6PH-ve-yyc" secondAttribute="leading" id="8Iz-we-hDI"/>
                     <constraint firstItem="npc-1e-J2s" firstAttribute="centerY" secondItem="E3b-N8-GHR" secondAttribute="centerY" id="8YC-sG-stF"/>
                     <constraint firstItem="cnE-5U-0Ic" firstAttribute="top" secondItem="E3b-N8-GHR" secondAttribute="bottom" constant="10" id="BwC-1d-U1f"/>
                     <constraint firstItem="6PH-ve-yyc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="EOu-3Z-wa4"/>
@@ -114,10 +117,12 @@
                     <constraint firstItem="c05-i8-XOe" firstAttribute="top" secondItem="cnE-5U-0Ic" secondAttribute="bottom" constant="10" id="SbH-hK-pGq"/>
                     <constraint firstItem="6xV-8R-d22" firstAttribute="leading" secondItem="kx5-yO-YLY" secondAttribute="trailing" constant="10" id="cqD-VG-Rm4"/>
                     <constraint firstItem="E3b-N8-GHR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gd5-bW-eiJ"/>
+                    <constraint firstAttribute="bottom" secondItem="9B3-hY-rd6" secondAttribute="bottom" id="igx-9e-hZ3"/>
                     <constraint firstAttribute="bottomMargin" secondItem="bmR-Sz-ZF2" secondAttribute="bottom" constant="50" id="pd3-0V-kUE"/>
                     <constraint firstItem="6xV-8R-d22" firstAttribute="top" secondItem="cnE-5U-0Ic" secondAttribute="bottom" constant="10" id="pz5-0J-HJ8"/>
                     <constraint firstItem="cnE-5U-0Ic" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="qmO-So-gFq"/>
                     <constraint firstItem="kx5-yO-YLY" firstAttribute="top" secondItem="cnE-5U-0Ic" secondAttribute="bottom" constant="10" id="sju-La-zpx"/>
+                    <constraint firstItem="9B3-hY-rd6" firstAttribute="trailing" secondItem="c05-i8-XOe" secondAttribute="trailing" id="v39-P1-JmK"/>
                     <constraint firstAttribute="trailingMargin" secondItem="cnE-5U-0Ic" secondAttribute="trailing" constant="10" id="xue-Ba-EAO"/>
                 </constraints>
             </tableViewCellContentView>

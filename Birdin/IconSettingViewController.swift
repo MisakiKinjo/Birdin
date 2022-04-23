@@ -64,7 +64,7 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
                 }
                 self.iconImage = image
                 let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
-                postViewController.iconImage = image
+                postViewController.iconImage = self.iconImage
             SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
         }
         editor.dismiss(animated: true, completion: nil)

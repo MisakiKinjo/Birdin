@@ -13,7 +13,7 @@ class AvatarViewController: UIViewController {
     
     var status = 1
     var photos = ["body1", "body2", "body3", "body4", "white"]
-    var localImageURL: NSURL?
+    //var localImageURL: NSURL?
     var iconRef: StorageReference?
     var iconImage: UIImage?
     
@@ -36,6 +36,11 @@ class AvatarViewController: UIViewController {
         beakImageView.image = UIImage(named: "white")
         cheekImageView.image = UIImage(named: "white")
         headImageView.image = UIImage(named: "white")
+
+        let layout = UICollectionViewFlowLayout()
+        layout.itemSize = CGSize(width: 105, height: 105)
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 20, right: 10)
+
 
     }
     
@@ -165,8 +170,9 @@ extension AvatarViewController: UICollectionViewDelegate, UICollectionViewDataSo
     //セルのサイズを指定する処理
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 
+        //collectionViewLayout.estimatedItemSize = CGSize(width: collectionView.frame.width / 2, height: collectionView.frame.height / 3)
         // 横方向のスペース調整
-        let horizontalSpace:CGFloat = 3
+        let horizontalSpace:CGFloat = 10
 
         //セルのサイズを指定。画面上にセルを3つ表示させたいのであれば、デバイスの横幅を3分割した横幅　- セル間のスペース*2（セル間のスペースが二つあるため）
         let cellSize:CGFloat = view.bounds.width/3 - horizontalSpace*2

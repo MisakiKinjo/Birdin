@@ -17,12 +17,17 @@ class PostViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
-
+    @IBOutlet weak var iconImageView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // 受け取った画像をImageViewに設定
         imageView.image = image
+        iconImageView.image = iconImage
+        
+        iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
+        iconImageView.clipsToBounds = true
     }
     
     @IBAction func handlePostButton(_ sender: Any) {
@@ -32,18 +37,18 @@ class PostViewController: UIViewController {
         let postRef = Firestore.firestore().collection(Const.PostPath).document()
         let imageRef = Storage.storage().reference().child(Const.ImagePath).child(postRef.documentID + ".jpg")
         let postIconRef = Storage.storage().reference().child(Const.iconPath).child(postRef.documentID + Auth.auth().currentUser!.uid + ".jpg")
-        let data = iconImage!.jpegData(compressionQuality: 1.0)! as NSData
-        postIconRef.putData(data as Data, metadata: nil) { (data, error) in
-                    if error != nil {
-                        return
-                    }
-            
-                }
+        let data = iconImage.jpegData(compressionQuality: 0.75)
+        
         // HUDで投稿処理中の表示を開始
                 SVProgressHUD.show()
         // Storageに画像をアップロードする
         let metadata = StorageMetadata()
         metadata.contentType = "image/jpeg"
+        postIconRef.putData(data!, metadata: metadata) { (metadata, error) in
+                    if error != nil {
+                        return
+                    }            
+                }
         imageRef.putData(imageData!, metadata: metadata) { (metadata, error) in
                     if error != nil {
                         // 画像のアップロード失敗
