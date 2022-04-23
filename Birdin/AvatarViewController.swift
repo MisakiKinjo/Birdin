@@ -16,6 +16,7 @@ class AvatarViewController: UIViewController {
     //var localImageURL: NSURL?
     var iconRef: StorageReference?
     var iconImage: UIImage?
+    let userIcon = UserIcon.shared
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var iconImageView: UIImageView!
@@ -104,11 +105,7 @@ class AvatarViewController: UIViewController {
     @IBAction func handleFinishButton(_ sender: Any) {
         //avatarImageをアイコンに上書き
         iconImage = imageCreate(bodyImage: iconImageView.image!, eyeImage: eyeImageView.image!, beakImage: beakImageView.image!, cheekImage: cheekImageView.image!, headImage: headImageView.image!)
-        //self.localImageURL = iconImage.InfoKey.imageURL as? NSURL
-        /*let date:Date = Date()
-        let format = DateFormatter()
-        format.dateFormat = "yyyy/MM/dd-HH:mm:ss"
-        let sDate = format.string(from: date)*/
+        
         let storageref = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
         let data = iconImage!.jpegData(compressionQuality: 1.0)! as NSData
         storageref.delete()
@@ -120,9 +117,9 @@ class AvatarViewController: UIViewController {
             self.iconRef = storageref
                 }
         
-        let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
-        postViewController.iconImage = iconImage
-        
+        /*let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
+        postViewController.iconImage = iconImage*/
+        userIcon.icon = iconImage!
         SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
         self.dismiss(animated: true, completion: nil)
     }

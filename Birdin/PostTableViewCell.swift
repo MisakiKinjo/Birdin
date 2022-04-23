@@ -22,6 +22,8 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
     @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     
+    let userIcon = UserIcon.shared
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -81,7 +83,7 @@ class PostTableViewCell: UITableViewCell,UITextFieldDelegate {
         let sDate = format.string(from: date)
         iconImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray*/
         let postIconRef = Storage.storage().reference().child(Const.iconPath).child(postData.id + Auth.auth().currentUser!.uid + ".jpg")
-        //iconImageView.image = postData.iconImage
+        //iconImageView.image = userIcon.icon
         iconImageView.sd_setImage(with: postIconRef)
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
         iconImageView.clipsToBounds = true

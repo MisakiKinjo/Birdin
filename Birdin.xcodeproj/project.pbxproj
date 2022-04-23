@@ -30,6 +30,7 @@
 		5BC79040280D578F001C1296 /* NewIconSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC7903F280D578F001C1296 /* NewIconSettingViewController.swift */; };
 		5BC79042280D57A3001C1296 /* NewAvatarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC79041280D57A3001C1296 /* NewAvatarViewController.swift */; };
 		5BC79048281035B3001C1296 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC79047281035B3001C1296 /* GoogleService-Info.plist */; };
+		5BC7904A2813D675001C1296 /* UserIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC790492813D673001C1296 /* UserIcon.swift */; };
 		7F06C25ACC23C3423A865B0B /* Pods_Birdin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100AD0254AF3041A51716F6D /* Pods_Birdin.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		5BC7903F280D578F001C1296 /* NewIconSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewIconSettingViewController.swift; sourceTree = "<group>"; };
 		5BC79041280D57A3001C1296 /* NewAvatarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAvatarViewController.swift; sourceTree = "<group>"; };
 		5BC79047281035B3001C1296 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5BC790492813D673001C1296 /* UserIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIcon.swift; sourceTree = "<group>"; };
 		A3D9E4BF4B9FE3CCEFD2B3E1 /* Pods-Birdin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birdin.release.xcconfig"; path = "Target Support Files/Pods-Birdin/Pods-Birdin.release.xcconfig"; sourceTree = "<group>"; };
 		FC104B028715F2D5802E0140 /* Pods-Birdin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Birdin.debug.xcconfig"; path = "Target Support Files/Pods-Birdin/Pods-Birdin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 				5BC79033280D1973001C1296 /* TabBarController.swift */,
 				5BC79037280D3AEE001C1296 /* Const.swift */,
 				5BC79039280D3B5A001C1296 /* PostData.swift */,
+				5BC790492813D673001C1296 /* UserIcon.swift */,
 				5BC7903B280D3BB9001C1296 /* PostTableViewCell.swift */,
 				5BC7903C280D3BB9001C1296 /* PostTableViewCell.xib */,
 				5BC79011280D12E7001C1296 /* Main.storyboard */,
@@ -261,6 +264,7 @@
 			files = (
 				5BC7900C280D12E7001C1296 /* AppDelegate.swift in Sources */,
 				5BC79034280D1973001C1296 /* TabBarController.swift in Sources */,
+				5BC7904A2813D675001C1296 /* UserIcon.swift in Sources */,
 				5BC79026280D1478001C1296 /* NewNameViewController.swift in Sources */,
 				5BC7900E280D12E7001C1296 /* SceneDelegate.swift in Sources */,
 				5BC79028280D148A001C1296 /* LoginViewController.swift in Sources */,

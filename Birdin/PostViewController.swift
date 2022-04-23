@@ -14,6 +14,7 @@ class PostViewController: UIViewController {
     
     var image: UIImage!
     var iconImage: UIImage!
+    let userIcon = UserIcon.shared
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textField: UITextField!
@@ -24,7 +25,8 @@ class PostViewController: UIViewController {
 
         // 受け取った画像をImageViewに設定
         imageView.image = image
-        iconImageView.image = iconImage
+        iconImageView.image = userIcon.icon
+        iconImage = iconImageView.image
         
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
         iconImageView.clipsToBounds = true

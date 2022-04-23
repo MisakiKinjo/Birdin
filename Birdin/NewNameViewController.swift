@@ -14,6 +14,7 @@ import SVProgressHUD
 class NewNameViewController: UIViewController {
     
     var image: UIImage!
+    let userIcon = UserIcon.shared
     
     @IBOutlet weak var iconImage: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
@@ -76,8 +77,9 @@ class NewNameViewController: UIViewController {
                        //self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
                         return
                     }
-            let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
-            postViewController.iconImage = self.image
+            /*let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
+            postViewController.iconImage = self.image*/
+            self.userIcon.icon = self.image
                                 // HUDで完了を表示する
                     SVProgressHUD.showSuccess(withStatus: "登録しました")
                     // 投稿処理が完了したので先頭画面に戻る

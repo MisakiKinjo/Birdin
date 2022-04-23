@@ -137,7 +137,7 @@ extension NewAvatarViewController: UICollectionViewDelegate, UICollectionViewDat
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let collectionCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell2", for: indexPath)
-        let imageView = collectionCell.contentView.viewWithTag(2) as! UIImageView
+        let imageView = collectionCell.contentView.viewWithTag(1) as! UIImageView
         let cellImage = UIImage(named: photos[indexPath.row])
         imageView.image = cellImage
         return collectionCell

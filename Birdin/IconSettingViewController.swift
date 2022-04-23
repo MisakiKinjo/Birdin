@@ -13,6 +13,7 @@ import SVProgressHUD
 class IconSettingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate {
     
     var iconImage: UIImage?
+    let userIcon = UserIcon.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,8 +64,9 @@ class IconSettingViewController: UIViewController, UIImagePickerControllerDelega
                     SVProgressHUD.showError(withStatus: "画像のアップロードが失敗しました")
                 }
                 self.iconImage = image
-                let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
-                postViewController.iconImage = self.iconImage
+                /*let postViewController = self.storyboard?.instantiateViewController(withIdentifier: "Post") as! PostViewController
+                postViewController.iconImage = self.iconImage*/
+                self.userIcon.icon = self.iconImage!
             SVProgressHUD.showSuccess(withStatus: "アイコン画像を変更しました")
         }
         editor.dismiss(animated: true, completion: nil)
