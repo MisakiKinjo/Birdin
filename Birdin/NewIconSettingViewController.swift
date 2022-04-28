@@ -12,7 +12,7 @@ import CLImageEditor
 
 class NewIconSettingViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate {
 
-    //var id : String
+    let userIcon = UserIcon.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,9 +56,10 @@ class NewIconSettingViewController: UIViewController, UIImagePickerControllerDel
             if error != nil {
                 SVProgressHUD.showError(withStatus: "画像のアップロードが失敗しました")
             }*/
+        userIcon.icon = image
         //　遷移先の画面を開く
         let newNameViewController = self.storyboard?.instantiateViewController(withIdentifier: "NewName") as! NewNameViewController
-        newNameViewController.image = image!
+        //newNameViewController.image = image!
         editor.present(newNameViewController, animated: true, completion: nil)
         //}
     }

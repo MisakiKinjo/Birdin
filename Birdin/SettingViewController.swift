@@ -88,6 +88,7 @@ class SettingViewController: UIViewController {
                     UIAlertAction(
                         title: "削除",
                         style: UIAlertAction.Style.default, handler: { (action) -> Void in
+                            try! Auth.auth().signOut()
                             Auth.auth().currentUser?.delete()
                             let helloViewController = self.storyboard?.instantiateViewController(withIdentifier: "Hello")
                             self.present(helloViewController!, animated: true, completion: nil)

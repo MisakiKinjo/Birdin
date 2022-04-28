@@ -13,6 +13,7 @@ class NewAvatarViewController: UIViewController {
     
     var status = 1
     var photos = ["body1", "body2", "body3", "body4", "white"]
+    let userIcon = UserIcon.shared
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var iconImageView: UIImageView!
@@ -100,8 +101,9 @@ class NewAvatarViewController: UIViewController {
                     }
             //self.iconRef = storageref
                 }*/
-        let newNameViewController = self.storyboard?.instantiateViewController(withIdentifier: "NewName") as! NewNameViewController
-        newNameViewController.image = iconImage
+        /*let newNameViewController = self.storyboard?.instantiateViewController(withIdentifier: "NewName") as! NewNameViewController
+        newNameViewController.image = iconImage*/
+        userIcon.icon = iconImage
         
         //SVProgressHUD.showSuccess(withStatus: "アイコン画像を登録しました")
         //self.dismiss(animated: true, completion: nil)
@@ -136,7 +138,7 @@ extension NewAvatarViewController: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let collectionCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell2", for: indexPath)
+        let collectionCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath)
         let imageView = collectionCell.contentView.viewWithTag(1) as! UIImageView
         let cellImage = UIImage(named: photos[indexPath.row])
         imageView.image = cellImage
@@ -162,7 +164,7 @@ extension NewAvatarViewController: UICollectionViewDelegate, UICollectionViewDat
             //if (collectionView.cellForItem(at: indexPath) as? UICollectionViewCell?) != nil {
                 print("DEBUG_PRINT: セルがタップされました")
                 // セルの要素が取得できる
-                let collectionCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell2", for: indexPath)
+                let collectionCell:UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath)
                 let cellImage = UIImage(named: photos[indexPath.row])
                 let imageView = collectionCell.contentView.viewWithTag(1) as! UIImageView
                 imageView.image = cellImage

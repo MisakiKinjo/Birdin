@@ -287,7 +287,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="handleNextButton:" destination="BwG-KT-pCw" eventType="touchUpInside" id="g52-3Z-DD1"/>
-                                    <segue destination="GtX-sQ-DWY" kind="show" id="WOP-zG-wDI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -951,13 +950,7 @@
                         <subviews>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2wk-fn-4w5">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <barButtonItem systemItem="cancel" id="DWP-y0-O20">
-                                        <connections>
-                                            <segue destination="dF2-qz-kak" kind="unwind" unwindAction="newAccount:" id="UU9-7v-7MU"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
+                                <items/>
                                 <color key="tintColor" systemColor="systemBrownColor"/>
                             </toolbar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="アイコン設定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6j-ye-8qr">
@@ -1018,7 +1011,6 @@
                     <navigationItem key="navigationItem" id="y1U-F0-UX4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qvT-x6-pUz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="dF2-qz-kak" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1903" y="808"/>
         </scene>
@@ -1170,7 +1162,7 @@
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
-                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell2" id="o3l-o8-Rs6">
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="o3l-o8-Rs6">
                                                         <rect key="frame" x="0.0" y="0.0" width="342" height="346"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PLd-pN-3N5">

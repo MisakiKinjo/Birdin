@@ -22,8 +22,8 @@ class NewNameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        iconImage.image = image
+        iconImage.image = userIcon.icon
+        image = iconImage.image
         iconImage.layer.cornerRadius = iconImage.frame.size.width * 0.5
                 iconImage.clipsToBounds = true
     }
