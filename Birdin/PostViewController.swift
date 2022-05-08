@@ -25,7 +25,9 @@ class PostViewController: UIViewController {
 
         // 受け取った画像をImageViewに設定
         imageView.image = image
-        iconImageView.image = userIcon.icon
+        let iconref = Storage.storage().reference().child(Const.iconPath).child(Auth.auth().currentUser!.uid + ".jpg")
+        iconImageView.sd_setImage(with: iconref)
+        //iconImageView.image = userIcon.icon
         iconImage = iconImageView.image
         
         iconImageView.layer.cornerRadius = iconImageView.frame.size.width * 0.5
